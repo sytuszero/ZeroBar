@@ -4,14 +4,13 @@
 
 set -e
 
-TMP_DIR="/tmp/zerobar"
+TMP_DIR=$(mktemp -d /tmp/zerobar.XXXXXX)
 REPO_URL="https://github.com/sytuszero/ZeroBar.git"
 WATCHER_SCRIPT="$HOME/.config/waybar/watch-apps.sh"
 
 echo "Installing ZeroBar..."
 
 # Clone repo
-rm -rf "$TMP_DIR"
 git clone "$REPO_URL" "$TMP_DIR"
 
 # Check which apps are installed
