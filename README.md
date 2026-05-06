@@ -3,9 +3,17 @@
 Beautiful waybar theme with Iraqi flag customization for Omarchy/Hyprland.
 
 ## Features
-- Iraqi flag (🇮🇶) as menu icon
-- Tokyo Night blue accent color
-- Spotify, Steam, Discord, Telegram, and more app launchers
+- Iraqi flag (🇮🇶) as menu icon with Tokyo Night blue background
+- App launchers: Brave, VSCode, Steam, Telegram, Discord, Spotify, GitHub, OBS, YouTube
+- System monitors: CPU usage, battery status, network, bluetooth, audio control
+- Clock with calendar integration
+- Tray icons support
+- Weather display (wttrbar)
+- Automatic updates checker (pacman + omarchy)
+- Screen recording indicator
+- Persistent workspaces with custom icons
+- Hover effects and visual feedback
+- Custom color scheme with Nerd Font icons
 
 ## Requirements
 - **JetBrainsMono Nerd Font** (installed on Omarchy)
