@@ -226,7 +226,7 @@
   },
 
   "custom/brave": {
-    "format": "  ",
+    "format": "  ",
     "on-click": "brave",
     "tooltip": false
   },
