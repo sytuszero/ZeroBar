@@ -12,11 +12,10 @@
    "margin-bottom": 0,
    "height": 24,
 
-  "modules-left": [
+   "modules-left": [
     "custom/omarchy",
     "custom/weather",
     "custom/files",
-    "custom/antigravity",
     "custom/brave",
     "custom/vscode",
     "custom/steam",
@@ -241,14 +240,6 @@
     "exec": "$OMARCHY_PATH/default/waybar/indicators/screen-recording.sh",
     "signal": 8,
     "return-type": "json"
-  },
-
-  "custom/antigravity": {
-    "format": " 💀",
-    "exec": "echo ' 💀'",
-    "on-click": "antigravity",
-    "tooltip": false,
-    "interval": 3600
   },
 
   "custom/files": {
