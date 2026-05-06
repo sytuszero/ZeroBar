@@ -8,7 +8,6 @@ Beautiful waybar theme with Iraqi flag customization for Omarchy/Hyprland.
 - System monitors: CPU usage, battery status, network, bluetooth, audio control
 - Clock with calendar integration
 - Tray icons support
-- Weather display (wttrbar)
 - Automatic updates checker (pacman + omarchy)
 - Screen recording indicator
 - Persistent workspaces with custom icons
