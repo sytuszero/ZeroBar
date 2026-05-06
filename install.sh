@@ -75,7 +75,16 @@ nohup "$WATCHER_SCRIPT" > /dev/null 2>&1 &
 rm -rf "$TMP_DIR"
 
 # Restart waybar
-omarchy restart waybar 2>/dev/null || killall -SIGUSR2 waybar 2>/dev/null || true
+if command -v omarchy &>/dev/null; then
+    omarchy restart waybar 2>/dev/null || true
+fi
+
+# Fallback: kill and restart waybar
+if pgrep -x waybar > /dev/null; then
+    killall waybar 2>/dev/null || true
+    sleep 1
+fi
+waybar &
 
 echo "✓ ZeroBar installed successfully!"
 echo "✓ Smart mode enabled: Icons auto-update when you install/remove apps."
