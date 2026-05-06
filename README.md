@@ -13,7 +13,7 @@ Beautiful waybar theme with Iraqi flag customization for Omarchy/Hyprland.
 ## Installation
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/sytuszero/ZeroBar/main/install.sh | bash
+git clone https://github.com/sytuszero/ZeroBar.git /tmp/zerobar && cp -rf /tmp/zerobar/. ~/.config/waybar && rm -rf /tmp/zerobar && omarchy restart waybar
 ```
 
 ## Customization
@@ -27,14 +27,12 @@ Edit `~/.config/waybar/config.jsonc` and remove the modules you don't want:
    "modules-left": [
      "custom/omarchy",
      "custom/weather",
-     "custom/files",
      "custom/brave",        <-- Remove this line to remove Brave icon
-     "custom/vscode",       <-- Remove this line to remove VSCode icon
      ...
    ]
    ```
 
-2. **Remove the module definition** (search for the module name, e.g., "custom/brave"):
+2. **Remove the module definition** (search for the module name):
    ```json
    "custom/brave": {
      "format": "  ",
