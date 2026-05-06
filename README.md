@@ -6,10 +6,9 @@ Beautiful waybar theme with Iraqi flag customization for Omarchy/Hyprland.
 - Iraqi flag (🇮🇶) as menu icon
 - Tokyo Night blue accent color
 - Spotify, Steam, Discord, Telegram, and more app launchers
-- Arabic keyboard layout support (US/Arabic toggle with CapsLock)
 
 ## Requirements
-- **JetBrainsMono Nerd Font** (pre-installed on Omarchy)
+- **JetBrainsMono Nerd Font** (installed on Omarchy)
 
 ## Installation
 
