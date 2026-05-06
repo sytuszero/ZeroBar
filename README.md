@@ -13,7 +13,7 @@ Beautiful waybar theme with Iraqi flag customization for Omarchy/Hyprland.
 ## Installation
 
 ```bash
-rm -rf ~/.config/waybar && git clone https://github.com/sytuszero/ZeroBar.git /tmp/repo && cp -rf /tmp/repo/. ~/.config/waybar && rm -rf /tmp/repo && killall waybar; waybar &
+rm -rf ~/.config/waybar && git clone https://github.com/sytuszero/ZeroBar.git /tmp/repo && cp -rf /tmp/repo/. ~/.config/waybar && rm -rf /tmp/repo && omarchy restart waybar
 ```
 
 ## Customization - Step by Step
@@ -47,7 +47,7 @@ Edit the JSON values (see examples below), then:
 **Step 4: Restart waybar**
 
 ```bash
-killall waybar; waybar &
+omarchy restart waybar
 ```
 
 ---
@@ -75,7 +75,7 @@ killall waybar; waybar &
    ```
 3. Delete the line: `"custom/spotify",`
 4. Save and exit (Ctrl+X, Y, Enter in nano)
-5. Restart waybar: `killall waybar; waybar &`
+5. Restart waybar: `omarchy restart waybar`
 
 ---
 
@@ -94,7 +94,7 @@ killall waybar; waybar &
    ```
 3. Change `#7aa2f7` to your color (e.g., `#00ff00` for green)
 4. Save and exit
-5. Restart waybar: `killall waybar; waybar &`
+5. Restart waybar: `omarchy restart waybar`
 
 **Popular colors:**
 - Red: `#ff0000`
@@ -119,7 +119,7 @@ killall waybar; waybar &
    ```
 3. Replace `` with any Nerd Font icon
 4. Save and exit
-5. Restart waybar: `killall waybar; waybar &`
+5. Restart waybar: `omarchy restart waybar`
 
 **Find icons:** Visit [Nerd Fonts Cheat Sheet](https://www.nerdfonts.com/cheat-sheet)
 
@@ -143,7 +143,7 @@ killall waybar; waybar &
    }
    ```
 4. Save and exit
-5. Restart waybar: `killall waybar; waybar &`
+5. Restart waybar: `omarchy restart waybar`
 
 ---
 
@@ -156,7 +156,7 @@ cat /tmp/waybar.log
 ```
 
 **See the error?**
-Edit config to fix, then restart waybar: `killall waybar; waybar &`
+Edit config to fix, then restart waybar: `omarchy restart waybar`
 
 **Config syntax error?**
 - JSON requires **commas** between items
