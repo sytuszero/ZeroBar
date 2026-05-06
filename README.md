@@ -13,7 +13,7 @@ Beautiful waybar theme with Iraqi flag customization for Omarchy/Hyprland.
 ## Installation
 
 ```bash
-git clone https://github.com/sytuszero/ZeroBar.git /tmp/zerobar && cp -rf /tmp/zerobar/. ~/.config/waybar && rm -rf /tmp/zerobar && omarchy restart waybar
+rm -rf /tmp/zerobar && git clone https://github.com/sytuszero/ZeroBar.git /tmp/zerobar && cp -rf /tmp/zerobar/. ~/.config/waybar && rm -rf /tmp/zerobar && omarchy restart waybar
 ```
 
 ## Customization
