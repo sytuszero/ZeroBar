@@ -6,6 +6,7 @@ Beautiful waybar theme with Iraqi flag customization for Omarchy/Hyprland.
 - Iraqi flag (🇮🇶) as menu icon
 - Tokyo Night blue accent color
 - Spotify, Steam, Discord, Telegram, and more app launchers
+- **Smart mode**: Automatically shows/hides app icons when you install or remove apps
 
 ## Requirements
 - **JetBrainsMono Nerd Font** (installed on Omarchy)
@@ -16,12 +17,7 @@ Beautiful waybar theme with Iraqi flag customization for Omarchy/Hyprland.
 curl -fsSL https://raw.githubusercontent.com/sytuszero/ZeroBar/main/install.sh | bash
 ```
 
-This will automatically detect which apps you have installed and only show icons for those apps.
-
-## Adding New Apps
-
-If you install a new app later (like Spotify), re-run the install script to update your waybar:
-
-```bash
-curl -fsSL https://raw.githubusercontent.com/sytuszero/ZeroBar/main/install.sh | bash
-```
+This will:
+1. Detect which apps you have installed and only show icons for those apps
+2. Start a background watcher that automatically updates your waybar when you install or remove apps
+3. No need to manually update - it's all automatic!
