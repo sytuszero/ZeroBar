@@ -3,7 +3,7 @@
 Beautiful waybar theme with Iraqi flag customization for Omarchy/Hyprland.
 
 ## Features
-- Iraqi flag (🇮🇶) as menu icon with Tokyo Night blue background
+- Cat icon as menu button with Tokyo Night blue background
 - App launchers: Brave, VSCode, Steam, Telegram, Discord, Spotify, GitHub, OBS, YouTube
 - System monitors: CPU usage, battery status, network, bluetooth, audio control
 - Clock with calendar integration
@@ -86,12 +86,12 @@ omarchy restart waybar
 
 ---
 
-### Change the Iraqi Flag Color
+### Change the Menu Button Color
 
 **Example: Change to green**
 
 1. Open style file: `nano ~/.config/waybar/style.css`
-2. Find line 99 (custom-omarchy section):
+2. Find the `#custom-omarchy` section:
    ```css
    #custom-omarchy {
      background-color: #7aa2f7;  ← Change this to any color
