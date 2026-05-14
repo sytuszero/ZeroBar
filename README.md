@@ -15,14 +15,14 @@ Beautiful waybar theme with Iraqi flag customization for Omarchy/Hyprland.
 - Custom color scheme with Nerd Font icons
 
 ## Requirements
-- **JetBrainsMono Nerd Font** (installed on Omarchy)
-- **[polycat](https://github.com/2IMT/polycat)** - CPU cat animation (install via AUR: `yay -S polycat`)
+- **JetBrainsMono Nerd Font** - required for icons and polycat glyphs
+- **[polycat](https://github.com/2IMT/polycat)** - CPU cat animation (AUR: `yay -S polycat`)
 
 ## Installation
 
 ```bash
-# 1. Install polycat (CPU cat animation)
-yay -S --noconfirm polycat
+# 1. Install fonts + polycat
+yay -S --noconfirm ttf-jetbrains-mono-nerd polycat
 cp polycat-config ~/.config/
 
 # 2. Install ZeroBar
