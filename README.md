@@ -23,10 +23,9 @@ Beautiful waybar theme with Iraqi flag customization for Omarchy/Hyprland.
 ```bash
 # 1. Install fonts + polycat
 yay -S --noconfirm ttf-jetbrains-mono-nerd polycat
-cp polycat-config ~/.config/
 
 # 2. Install ZeroBar
-rm -rf ~/.config/waybar && git clone https://github.com/sytuszero/ZeroBar.git /tmp/repo && cp -rf /tmp/repo/. ~/.config/waybar && rm -rf /tmp/repo
+rm -rf ~/.config/waybar && git clone https://github.com/sytuszero/ZeroBar.git /tmp/repo && cp -rf /tmp/repo/. ~/.config/waybar && cp /tmp/repo/polycat-config ~/.config/ && rm -rf /tmp/repo
 
 # 3. Restart waybar
 killall waybar; sleep 0.5; waybar &>/dev/null &
