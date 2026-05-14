@@ -119,7 +119,7 @@ omarchy restart waybar
 2. Find `custom/brave` section (around line 260):
    ```json
    "custom/brave": {
-     "format": "  ",  ← Change this icon
+     "format": " 󰝨 ",  ← Change this icon
      "on-click": "brave",
      "tooltip": false
    }
