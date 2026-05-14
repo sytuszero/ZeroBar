@@ -22,11 +22,14 @@ Beautiful waybar theme with Iraqi flag customization for Omarchy/Hyprland.
 
 ```bash
 # 1. Install polycat (CPU cat animation)
-yay -S polycat
+yay -S --noconfirm polycat
 mkdir -p ~/.config && cp /usr/share/polycat/polycat-config ~/.config/
 
 # 2. Install ZeroBar
-rm -rf ~/.config/waybar && git clone https://github.com/sytuszero/ZeroBar.git /tmp/repo && cp -rf /tmp/repo/. ~/.config/waybar && rm -rf /tmp/repo && omarchy restart waybar
+rm -rf ~/.config/waybar && git clone https://github.com/sytuszero/ZeroBar.git /tmp/repo && cp -rf /tmp/repo/. ~/.config/waybar && rm -rf /tmp/repo
+
+# 3. Restart waybar
+killall waybar; sleep 0.5; waybar &>/dev/null &
 ```
 
 ## Customization - Step by Step
