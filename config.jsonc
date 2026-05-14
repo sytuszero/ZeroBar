@@ -28,7 +28,8 @@
     "hyprland/workspaces",
     "custom/screenrecording-indicator",
     "custom/updatespacman",
-    "custom/update"
+    "custom/update",
+    "hyprland/window"
   ],
 
   "modules-center": [
@@ -104,6 +105,31 @@
     },
     "exec-if": "which waybar-module-pacman-updates",
     "exec": "waybar-module-pacman-updates --no-zero-output"
+  },
+
+  "hyprland/window": {
+    "format": "{title} - {class}",
+    "max-length": 20,
+    "rewrite": {
+      " - ": "",
+      "(.*?) - Chromium - chromium": "   $1 ",
+      "(.*chrome)...(.*)": "   $1 ",
+      "(.*) - Obsidian - .* - obsidian": "   $1 ",
+      "(.*nvim)...(.*)": "   $2 ",
+      "(.*code) - (.*)": " 󰨞  $1 ",
+      "^.*btop( .*|$)": " 󰧨 BTOP $1 ",
+      "^.*cmatrix( .*|$)": " 󰘨 MATRIX $1 ",
+      "(.*) - Spotify": "  $1 ",
+      "(.*) - com.mitchellh.ghostty": " 󰊠 $1 ",
+      "(.*) - Alacritty": "   $1 ",
+      "(.*) - BeeperTexts": " 󰻞  $1 ",
+      "(.*Discord)...(.*).. (.*)": "   $2 ",
+      "(.*) - org.gnome.Nautilus": " 󰣆  $1 ",
+      "(.*) - fish": "   [$1] ",
+      "(.*Steam)...(.*)": "   $1",
+      "(.*imv)...(.*).. (.*)": "   $2",
+      "(.*) - com.obsproject.Studio": "  $1 "
+    }
   },
 
   "clock": {
@@ -258,7 +284,7 @@
 
   "custom/github": {
     "format": "  ",
-    "on-click": "omarchy-launch-webapp https://github.com/",
+    "on-click": "brave --app=https://github.com/",
     "tooltip": false
   },
 
@@ -270,7 +296,7 @@
 
   "custom/youtube": {
     "format": "    ",
-    "on-click": "omarchy-launch-webapp https://youtube.com/",
+    "on-click": "brave --app=https://youtube.com/",
     "tooltip": false
   },
 
