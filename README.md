@@ -16,10 +16,16 @@ Beautiful waybar theme with Iraqi flag customization for Omarchy/Hyprland.
 
 ## Requirements
 - **JetBrainsMono Nerd Font** (installed on Omarchy)
+- **[polycat](https://github.com/2IMT/polycat)** - CPU cat animation (install via AUR: `yay -S polycat`)
 
 ## Installation
 
 ```bash
+# 1. Install polycat (CPU cat animation)
+yay -S polycat
+mkdir -p ~/.config && cp /usr/share/polycat/polycat-config ~/.config/
+
+# 2. Install ZeroBar
 rm -rf ~/.config/waybar && git clone https://github.com/sytuszero/ZeroBar.git /tmp/repo && cp -rf /tmp/repo/. ~/.config/waybar && rm -rf /tmp/repo && omarchy restart waybar
 ```
 
